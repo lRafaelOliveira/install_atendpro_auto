@@ -228,21 +228,21 @@ EOF
 # Arguments:
 #   None
 #######################################
-system_certbot_install() {
-  print_banner
-  printf "${WHITE} 💻 Instalando certbot...${GRAY_LIGHT}"
-  printf "\n\n"
+# system_certbot_install() {
+#   print_banner
+#   printf "${WHITE} 💻 Instalando certbot...${GRAY_LIGHT}"
+#   printf "\n\n"
 
-  sleep 2
+#   sleep 2
 
-  sudo su - root <<EOF
-  apt-get remove certbot
-  snap install --classic certbot
-  ln -s /snap/bin/certbot /usr/bin/certbot
-EOF
+#   sudo su - root <<EOF
+#   apt-get remove certbot
+#   snap install --classic certbot
+#   ln -s /snap/bin/certbot /usr/bin/certbot
+# EOF
 
-  sleep 2
-}
+#   sleep 2
+# }
 
 #######################################
 # installs nginx
